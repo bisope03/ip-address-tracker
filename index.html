@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+<body>
+
+  <div class="main">
+    <div class="header">
+      <h1>IP Address Tracker</h1>
+      <div class="input">
+        <input class="ip-input" type="text" placeholder="Search for any IP address or domain">
+        <input class="ip-submit" type="submit" value="">
+      </div>
+      <div class="main-info">
+        <div class="info address">
+          <h3>IP ADDRESS</h3>
+          <h1 class="ip-address">192.212.174.101</h1>
+        </div>
+        <div class="info location">
+          <h3>LOCATION</h3>
+          <h1 class="ip-location">Brooklyn, NY 10001</h1>
+        </div>
+        <div class="info timezone">
+          <h3>TIMEZONE</h3>
+          <h1 class="ip-timezone">UTC - 05:00</h1>
+        </div>
+        <div class="info isp">
+          <h3>ISP</h3>
+          <h1 class="ip-isp">SpaceX Starlink</h1>
+        </div>
+      </div>
+    </div> 
+    <div id="map" class="map-display"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="./index.js"></script>
+</body>
+</html>

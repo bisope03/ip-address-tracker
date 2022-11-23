@@ -1,0 +1,139 @@
+/* font-family: 'Rubik', sans-serif; */
+
+:root{
+    --clr-v-dark-gray: hsl(0, 0%, 17%);
+    --clr-dark-gray: hsl(0, 0%, 59%);
+    --clr-white: hsl(0, 33%, 99%);
+
+    --ff-rubik: 'Rubik', sans-serif; 
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    margin: 0;  
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-family: var(--ff-rubik);
+}
+
+.header{
+    width: 100%;
+    background: url(./images/pattern-bg.png) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.header > h1{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--clr-white);
+    margin-bottom: 2rem;
+}
+
+.input{
+    position: relative;
+    max-width: 40rem;
+    display: flex;
+    margin: auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;    
+}
+
+.ip-input{
+    width: 30rem;
+    padding: 0.8rem;
+    font-size: 1.125rem;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    outline: none;
+}
+
+.ip-input{
+    cursor: pointer;
+}
+
+.ip-submit{
+    background-image: url(./images/icon-arrow.svg);
+    background-color: var(--clr-v-dark-gray);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: opacity 250ms linear;
+}
+
+.ip-submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.main-info{
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--clr-white);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1000;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 3rem;
+    border-right: 0.5px solid var(--clr-dark-gray);
+}
+
+.isp{
+    border: none;
+}
+
+.info > h3{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--clr-dark-gray);
+}
+
+.info > h1{
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.map-display{
+    width: 100%;
+    min-height: 70vh;
+    margin-top: -4rem;
+    background-color: black;    
+}
+
+
+
+
+
+
